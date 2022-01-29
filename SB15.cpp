@@ -2,16 +2,20 @@
 
 int main()
 {
-	const int N = 20; 
-	int i = 0;
+	int N = 20; 
+	int i = 1;
 	
+	// Блок 0 Запрос на ввод числа
+	std::cout << "Enter a number: " << "\n";
+	std::cin >> N;
+
 	// Блок 1 поиск всех четных цифр
 	std::cout << "All even numbers up to: " << N << "\n";
 	while (i <= N)
 	{
-		i = i++;
 		if (i % 2 == 0)
 		std::cout << i << ", ";
+		i = i++;
 	}
 	std::cout << "\n";
 
